@@ -606,6 +606,8 @@ main {
 .services__wrapper-content-item {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .services__wrapper-content-item {
