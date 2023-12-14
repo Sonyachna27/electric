@@ -18,6 +18,7 @@ header{
         @media screen and (max-width:1023px) {
             overflow: hidden;
             overflow-x: scroll;
+            white-space: nowrap;
         }
         .container{
             display: flex;
@@ -26,7 +27,7 @@ header{
         }
         a{
             font-weight: 600;
-            white-space: nowrap;
+            
             &:hover{
                 color: $--blue;
                 transition: .3s;

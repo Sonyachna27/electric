@@ -71,6 +71,10 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     max-width: 270px;
+    @media screen and (max-width:360px) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: fit-content;
+    }
     a{
         max-height: 60px;
         margin: 0;
