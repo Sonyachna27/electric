@@ -123,6 +123,7 @@ header {
   .header__top {
     overflow: hidden;
     overflow-x: scroll;
+    white-space: nowrap;
   }
 }
 .header__top .container {
@@ -131,7 +132,6 @@ header {
 }
 .header__top a {
   font-weight: 600;
-  white-space: nowrap;
 }
 .header__top a:hover {
   color: #37A9E7;
@@ -972,6 +972,13 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   max-width: 270px;
+}
+@media screen and (max-width: 360px) {
+  .social {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }
 .social a {
   max-height: 60px;
